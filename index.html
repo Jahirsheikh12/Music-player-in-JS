@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bb1d24c066.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="nav">
+          <div class="circle">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <img src="image.png" alt="" class="song-img" loading="lazy" />
+        <h1>Hellow world</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <audio id="song">
+          <source src="song.mp3" type="audio/mp3" />
+        </audio>
+        <input type="range" name="music-range" id="progress" value="0" />
+
+        <div class="controls">
+          <div class="circle-btn">
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div class="circle-btn" onclick="playPause()">
+            <i class="fa-solid fa-play" id="play-btn"></i>
+          </div>
+          <div class="circle-btn">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
